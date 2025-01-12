@@ -1,0 +1,948 @@
+/* Dashboard.css */
+
+/* Styles généraux */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border-left: 4px solid #e50914;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+/* Container */
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+/* Col */
+.col-lg-4,
+.col-md-6,
+.mb-4 {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.3333%;
+  }
+}
+
+/* Movie Item */
+.movie-item {
+  position: relative;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+  height: 450px;
+}
+
+.movie-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover .movie-details {
+  transform: translateY(0);
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.movie-release-date {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hover Effects */
+.movie-title:hover {
+  color: #007BFF;
+}
+
+/* Responsive Typography */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .movie-title {
+    font-size: 16px;
+  }
+}
+/* page login */
+/* Login.css */
+
+/* Styles généraux */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #141414;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.login-container {
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-field {
+  margin-bottom: 20px;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Bouton de connexion */
+.login-button {
+  padding: 12px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-input {
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 16px;
+  }
+}
+/* page register */
+/* Register.css */
+
+/* Styles généraux */
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.register-container {
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.register-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-field {
+  margin-bottom: 20px;
+}
+
+.register-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.register-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.register-input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Bouton d'inscription */
+.register-button {
+  padding: 12px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .register-input {
+    font-size: 14px;
+  }
+
+  .register-button {
+    font-size: 16px;
+  }
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles pour le slider */
+.slider-container {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-prev, .slick-next {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.slick-prev {
+  left: -10px;
+}
+
+.slick-next {
+  right: -10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 24px;
+}
+
+/* Loading et Error states */
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-item {
+    margin: 5px;
+  }
+
+  .movie-poster {
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-item {
+    height: 380px;
+  }
+  
+  .movie-details {
+    padding: 15px;
+  }
+  
+  .movie-title {
+    font-size: 1rem;
+  }
+}
+
+.favorites-section {
+  margin: 20px 0;
+}
+
+.favorites-section h2 {
+  color: #ffffff;
+  border-left: 4px solid #ffd700;
+}
+
+.no-favorites {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.favorite-button.active svg {
+  fill: #ffd700;
+}
+
+.slider-container.favorites {
+  margin-left: 0;
+}
+
+.favorites .slick-track {
+  margin-left: 0;
+}
+
+.favorites .slick-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.login-register-link, .register-login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-register-button, .register-login-button {
+  background: none;
+  border: none;
+  color: #007BFF;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.login-register-button:hover, .register-login-button:hover {
+  color: #0056b3;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+  background-color: #141414;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-header {
+  padding: 20px 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(20,20,20,0) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e5e5e5;
+  text-align: left;
+  margin: 20px 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.search-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  background-color: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.3);
+  outline: none;
+}
+
+.slider-container {
+  margin: 40px 0;
+  padding: 20px 40px;
+  background-color: transparent;
+}
+
+.slider-container h2 {
+  color: #e5e5e5;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #e50914;
+  padding-left: 15px;
+}
+
+.movie-item {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+.movie-details {
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%, transparent 100%);
+  padding: 20px;
+}
+
+.movie-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.movie-release-date {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.favorite-button {
+  background-color: rgba(0,0,0,0.6);
+  border: 2px solid rgba(255,255,255,0.3);
+  padding: 8px;
+}
+
+.favorite-button.active {
+  background-color: #e50914;
+  border-color: #e50914;
+}
+
+.favorite-button svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.logout-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logout-button {
+  background-color: rgba(229, 9, 20, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: rgb(229, 9, 20);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+}
+
+/* Styles pour Login et Register */
+.login-container, .register-container {
+  background-color: #141414;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-title, .register-title {
+  color: #e5e5e5;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.login-form, .register-form {
+  background-color: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.login-field, .register-field {
+  margin-bottom: 20px;
+}
+
+.login-label, .register-label {
+  color: #e5e5e5;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.login-input, .register-input {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-input:focus, .register-input:focus {
+  outline: none;
+  border-color: #e50914;
+  box-shadow: 0 0 10px rgba(229,9,20,0.3);
+}
+
+.login-button, .register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #f40612;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229,9,20,0.3);
+}
+
+.login-register-button, .register-login-button {
+  background: none;
+  border: none;
+  color: #e5e5e5;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+}
+
+.login-register-button:hover, .register-login-button:hover {
+  color: #e50914;
+}
+
+.login-error, .register-error {
+  color: #e50914;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  background-color: rgba(229,9,20,0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.type-select {
+  padding: 12px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.type-select:focus {
+  background-color: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.3);
+  outline: none;
+}
+
+.type-select option {
+  background-color: #141414;
+  color: #fff;
+}
+
+.details-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0,0,0,0.6);
+  border: 2px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-button:hover {
+  background-color: rgba(229, 9, 20, 0.8);
+  border-color: #e50914;
+  transform: scale(1.1);
+}
+
+.movie-details-container {
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.movie-details-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details-poster {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.movie-details-info {
+  flex: 1;
+}
+
+.movie-details-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-left: 4px solid #e50914;
+  padding-left: 15px;
+}
+
+.movie-details-overview {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e5e5e5;
+}
+
+.movie-details-meta {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.back-button {
+  background-color: rgba(229, 9, 20, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(229, 9, 20, 0.3);
+  border-radius: 50%;
+  border-top-color: #e50914;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  color: #e5e5e5;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.video-player-container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.video-player-container .back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.play-button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #f40612;
+  transform: translateY(-2px);
+}
+
+.play-button.disabled {
+  background-color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.play-button.disabled:hover {
+  transform: none;
+  background-color: #666;
+}
+
+.plyr-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  --plyr-color-main: #e50914;
+  --plyr-video-background: #000;
+}
+
+.plyr-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-player-container h1 {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
