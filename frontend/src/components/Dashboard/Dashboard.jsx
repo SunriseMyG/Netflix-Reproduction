@@ -25,7 +25,7 @@ const Dashboard = () => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMjIxMzZjYmRhNGE3NDkwMWIwMjNkMjA2NWY3ZDRiMCIsIm5iZiI6MTcyNjY2NzcyMC4wMjM4MjYsInN1YiI6IjY2ZWFkOTJlNWMwNTE5YTIzNGQzNjY2NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IHCx_EGrz_W_UfYue4zUZZM5uGcz7bYvQDl8ym_E7vw',
+      Authorization: 'Bearer ',
     }
   }), []);
 
